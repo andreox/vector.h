@@ -109,3 +109,12 @@ void swap( Vettore *v , int index1 , int index2 ) {
 	v->vet[index2] = tmp ;
 	
 }
+
+void insert( Vettore *v , int elem , int index ) {
+
+	int i ;
+	v->size++ ;
+	for ( i = v->size ; i > index ; i-- ) v->vet[i] = v->vet[i-1] ;
+	v->vet[index] = elem ;
+
+}
