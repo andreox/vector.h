@@ -12,6 +12,7 @@ typedef struct vector {
 
 void initialize( Vettore *v , int size ) ;
 void push( Vettore *v , int elem ) ;
+void insert( Vettore *v , int elem , int index ) ;
 bool pop( Vettore *v , int elem ) ; //Return true if found
 bool sort( Vettore *v , char order ) ; //Order = 'd' if decreasing, 'c' if increasing
 int find( Vettore v , int elem ) ; //Return pos if found , -1 if not found
