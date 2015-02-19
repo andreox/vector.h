@@ -118,3 +118,12 @@ void insert( Vettore *v , int elem , int index ) {
 	v->vet[index] = elem ;
 
 }
+
+int average( Vettore v ) {
+	
+	int i , sum=0 ;
+	
+	for ( i = 0 ; i < v.size ; i++ ) sum += v.vet[i] ;
+	
+	return (sum/v.size) ;
+}
