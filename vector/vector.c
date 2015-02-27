@@ -127,3 +127,11 @@ int average( Vettore v ) {
 	
 	return (sum/v.size) ;
 }
+
+int max( Vettore v ) {
+	
+	int max = 0 ;
+	for ( i = 0 ; i < v.size ; i++ ) if ( v.vet[i] > max ) max = v.vet[i] ;
+	
+	return max ;
+}
